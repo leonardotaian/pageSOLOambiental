@@ -20,6 +20,8 @@
 }
 
 header {
+    margin-bottom: 0;
+    margin-top: 0;
     display: flex;
     flex-direction: column; /* Alinha os itens verticalmente */
     align-items: center; /* Centraliza os itens horizontalmente */
@@ -28,6 +30,7 @@ header {
 }
 
 .body{
+    padding-top: 0;
     background-color: #7FFFD4;
 }
 
@@ -55,4 +58,50 @@ nav button {
 
 nav button:hover {
     background-color: white; /* Cor de fundo ao passar o mouse */
+}
+
+.news-section {
+    padding:   20px;
+    background-color: #7FFFD4; /* Fundo igual ao body */
+    margin-top:   20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.news-item {
+    flex:  1  0  300px; /* Ajuste o valor conforme necessário */
+    border:   1px solid #ddd;
+    padding:   10px;
+    margin-bottom:   10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news-item img {
+    width:  100%;
+    height: auto;
+    margin-bottom:  10px;
+}
+.news-section h2 {
+    text-align: center;
+    width:  100%; /* Garante que o título ocupe toda a largura da seção */
+    margin-bottom:  20px; /* Espaçamento abaixo do título */
+}
+
+
+.news-content {
+    text-align: center;
+}
+
+.news-content h3 {
+    margin:   0;
+    font-size:   18px;
+    color: #333;
+}
+
+.news-content p {
+    margin-top:   5px;
+    color: #666;
 }
